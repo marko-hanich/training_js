@@ -128,23 +128,60 @@
 
 //! СКРИПТ ПОДСЧЕТА СУММЫ ПОКУПКИ С УЧЕТОМ ЦЕНЫ И СКИДОК
 
-const totalSpent = 2000;
-let payment = 500;
-let discount = 0;
+// let totalSpent = 2000;
+// let payment = 500;
+// let discount = 0;
 
-if (totalSpent >= 100 && totalSpent < 1000) {
-  console.log("Бронзовый призер, скидка 2%");
-  discount = 0.02;
-} else if (totalSpent >= 1000 && totalSpent < 5000) {
-  console.log("Серебряный призер, скидка 5%");
-  discount = 0.05;
-} else if (totalSpent >= 5000) {
-  console.log("Золотой призер, скидка 10%");
-  discount = 0.1;
-} else {
-  console.log("Не партнер, скидка 0%");
-}
+// if (totalSpent >= 100 && totalSpent < 1000) {
+//   console.log("Бронзовый призер, скидка 2%");
+//   discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//   console.log("Серебряный призер, скидка 5%");
+//   discount = 0.05;
+// } else if (totalSpent >= 5000) {
+//   console.log("Золотой призер, скидка 10%");
+//   discount = 0.1;
+// } else {
+//   console.log("Не партнер, скидка 0%");
+// }
 
-console.log(
-  `Оформляем заказ на сумму ${payment} со скидкой ${discount * 100}%`
-);
+// payment -= payment * discount;
+
+// console.log(
+//   `Оформляем заказ на сумму ${payment} со скидкой ${discount * 100}%`
+// );
+
+// totalSpent += payment;
+
+// console.log(`Общая сумма потраченного в магазине: ${totalSpent}`);
+
+
+//!БЕЗ ИСПОЛЬЗОВАНИЯ CONFIRM, ALERT, PROMPT - фишки с элементом BUTTON
+
+// const btnAdd = document.querySelector('button[data-add]');
+// const resetBtn = document.querySelector("button[data-reset]");
+// const valueInput = document.querySelector('input[data-value]');
+// const outputEl = document.querySelector('.js-output span');
+
+// let total = 0;
+
+// btnAdd.addEventListener('click', function () {
+//     console.log('click heheheeh');
+//     const value =  Number(valueInput.value);
+
+//     console.log(value);
+
+//     total += value;
+
+//     outputEl.textContent = total;
+
+//     valueInput.value = '';
+// });
+
+
+// resetBtn.addEventListener('click', function () {
+//     total = 0;
+//     outputEl.textContent = total;
+
+// });
+
